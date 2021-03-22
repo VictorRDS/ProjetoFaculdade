@@ -1,1 +1,3 @@
-# ProjetoFaculdade
+Este projeto foi desenolvido em 2020 afins de apresentação academica de matéria PROJETO INTEGRADOR, curso ANÁLISE E DESENVOLVIMENTO DE SISTEMAS pela UNIVERSIDADE DE SANTO AMARO (UNISA).
+A intenção inicial era criar uma plataforma de divulgação de serviços autonomos.  Por exemplo: Um pintor se cadastra com seus dados de portifolios e contato na plataforma, e um possível client poderá encontra-lo e através dos dados cadastrado pelo pintor, o possível cliente entraria em contato e solicitaria um possível orçamento.
+Este projeto foi apenas academico, após a correção da professora ele ficou arquivado. E somente na data de hoje 22/03/2021. Foi disponibilizado nesta plataforma. 
