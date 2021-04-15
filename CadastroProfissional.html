@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro do Profissional</title>
+	<link rel="stylesheet" href="css/bootstrap.css" >
+	<link rel="stylesheet" href="css/CadastroProfissional.css" >
+
+<script type="text/javascript">
+function validaCampo()
+{
+if(document.cadastro.nome.value=="")
+  {
+  alert("O Campo nome é obrigatório!");
+  return false;
+  }
+else
+  if(document.cadastro.email.value=="")
+  {
+  alert("O Campo email é obrigatório!");
+  return false;
+  }
+else
+  if(document.cadastro.endereco.value=="")
+  {
+  alert("O Campo endereço é obrigatório!");
+  return false;
+  }
+else
+  if(document.cadastro.cidade.value=="")
+  {
+  alert("O Campo Cidade é obrigatório!");
+  return false;
+  }
+else
+  if(document.cadastro.estado.value=="")
+  {
+  alert("O Campo Estado é obrigatório!");
+  return false;
+  }
+else
+  if(document.cadastro.bairro.value=="")
+  {
+  alert("O Campo Bairro é obrigatório!");
+  return false;
+  }
+  if(document.cadastro.cep.value=="")
+  {
+  alert("O Campo CEP é obrigatório!");
+  return false;
+  }
+
+else
+  if(document.cadastro.pais.value=="")
+  {
+  alert("O Campo país é obrigatório!");
+  return false;
+  }
+else 
+if(document.cadastro.ramo.value=="")
+  {
+  alert("O Campo Ramo é obrigatório!");
+  return false;
+  }
+else 
+if(document.cadastro.descricao.value=="")
+  {
+  alert("Descreva os seus serviços!");
+  return false;
+  }
+
+
+else
+return true;
+}
+<!-- Fim do JavaScript que validará os campos obrigatórios! -->
+</script>
+
+</head>
+<body>
+
+<div class="Menu"> 
+<h1><center>Cadastro do Profissional</center></h1>
+<div class="btn-group" role="group" aria-label="Basic example">
+<a href='SobreNos.html' type="button" class="btn btn-secondary">Quem Somos</a>
+<a href='CadastroClientes.html' type="button" class="btn btn-secondary">Cadastro Clientes</a> 
+<a href='CadastroProfissional.html' type="button" class="btn btn-secondary">Cadastro Profissional</a> 
+</div>
+</div>
+
+<center>
+ 
+<form id="cadastro" name="cadastro" method="post" action="InsertProfissionais.php" onsubmit="return validaCampo(); return false;">
+  <table width="625" border="0">
+
+<th colspan="4"> <h3><center>Preencha seus dados:</center></h3>
+<br></th>
+
+
+    <tr>
+      <td width="69"><span class="input-group-text" id="addon-wrapping">Nome:</span></td>
+      <td width="546"><input name="nome" type="text" id="nome" size="70" maxlength="60"/>
+        <span class="style1">*</span></td>
+    </tr>
+
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">E-mail:</span></td>
+      <td><input name="email" type="text" id="email" size="70" maxlength="60" />
+      <span class="style1">*</span></td>
+    </tr>
+
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">Sexo:</span></td>
+      <td><input name="sexo" type="radio" value="Masculino" checked="checked" />
+        Masculino 
+        <input name="sexo" type="radio" value="Feminino" />
+        Feminino <span class="style1">*</span> </td>
+    </tr>
+
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">DDD:</span></td>
+      <td><input name="ddd" type="text" id="ddd" size="4" maxlength="2" />
+      Telefone:
+        <input name="telefone" type="text" id="telefone" />
+        <span class="style3">Apenas n&uacute;meros</span> </td>
+    </tr>
+
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">Endere&ccedil;o:</td>
+      <td><input name="endereco" type="text" id="endereco" size="70" maxlength="70" />
+        <span class="style1">*</span></td>
+    </tr>
+
+
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">Bairro:</td>
+      <td><input name="bairro" type="text" id="bairro" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+
+
+
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">Estado:</td>
+      <td><select name="estado" id="estado">
+        <option>Selecione...</option>
+        <option value="AC">AC</option>
+        <option value="AL">AL</option>
+        <option value="AP">AP</option>
+        <option value="AM">AM</option>
+        <option value="BA">BA</option>
+        <option value="CE">CE</option>
+        <option value="ES">ES</option>
+        <option value="DF">DF</option>
+        <option value="MA">MA</option>
+        <option value="MT">MT</option>
+        <option value="MS">MS</option>
+        <option value="MG">MG</option>
+        <option value="PA">PA</option>
+        <option value="PB">PB</option>
+        <option value="PR">PR</option>
+        <option value="PE">PE</option>
+        <option value="PI">PI</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+        <option value="RS">RS</option>
+        <option value="RO">RO</option>
+        <option value="RR">RR</option>
+        <option value="SC">SC</option>
+        <option value="SP">SP</option>
+        <option value="SE">SE</option>
+        <option value="TO">TO</option>
+          </select>
+        <span class="style1">*      </span></td>
+    </tr>
+
+
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">Cidade:</td>
+      <td><input name="cidade" type="text" id="cidade" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+
+   
+    <tr><td><span class="input-group-text" id="addon-wrapping">
+        CEP:</td><td>
+        <input name="cep" type="text" id="cep" />
+        <span class="style3">Apenas n&uacute;meros</span> </td>
+    
+    </tr>
+
+
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">Pa&iacute;s:</td>
+      <td><input name="pais" type="text" id="pais" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+    
+    
+    <tr>
+      <td><span class="input-group-text" id="addon-wrapping">Ramo:</td>
+      <td><select name="ramo" id="ramo">
+        <option>Selecione...</option>
+        <option value="Assistência Técnica">Assistência Técnica</option>
+        <option value="Aulas">Aulas</option>
+        <option value="Autos">Autos</option>
+        <option value="Consultoria">Consultoria</option>
+        <option value="DesignerTecnologia">Designer e Tecnologia</option>
+        <option value="Eventos">Eventos</option>
+        <option value="ModaBeleza">Moda e Beleza</option>
+        <option value="Reformas">Reformas</option>
+        <option value="Saúde">Saúde</option>
+        <option value="Serviços">Serviços</option>
+          </select>  <span class="style1">*</span>
+       </td> </tr>
+
+    <tr>
+     <td><span class="input-group-text" id="addon-wrapping">Descrição:</td>
+     <td> <textarea name="descricao" id=descricao style="width:530;height:100"></textarea>
+      
+          <span class="style1">*</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />
+Desejo receber novidades e informa&ccedil;&otilde;es sobre o conte&uacute;do deste site. </td>
+    </tr>
+    <tr>
+      <td colspan="2"><p>
+        <button type="submit" class="btn btn-primary" name="cadastrar" id="cadastrar" action="InsertProfissionais.php">Concluir meu Cadastro</button>
+        
+          <button type="reset" class="btn btn-secondary" name="limpar" id="limpar" >Limpar Campos Preenchidos</button>
+          <br />
+          <span class="style1">* Campos com * s&atilde;o obrigat&oacute;rios!          </span></p>
+      <p>&nbsp; </p></td>
+    </tr>
+
+  </table>
+ </form>
+ 
+ </center>
+
+
+
+
+</body>
+</html>
