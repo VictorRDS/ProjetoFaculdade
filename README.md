@@ -1,3 +1,3 @@
-# Projetos Faculdade
+# Conhecendo a plataforma
 
-Pequenos projetos desenvolvidos para fins de estudos das tecnologias.
+Sou o Victor e estou iniciando na carreira de desenvolvimento de software.
